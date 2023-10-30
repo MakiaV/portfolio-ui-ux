@@ -1,0 +1,71 @@
+.headerWrapper {
+	margin-top: 30px;
+	margin-bottom: 150px;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px;
+	border-radius: 100px;
+	background: #17171a;
+	box-shadow: -6px 6px 8px #09090a, 6px -6px 8px #25252a;
+	/*height: 60px;*/
+}
+
+.logoWrapper {
+	width: 150px;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	transition: all 1s ease-in-out;
+	z-index: 99;
+	cursor: pointer;
+}
+.profileImg {
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: #52525b;
+	z-index: 1;
+}
+
+.logoWrapper:hover .logo {
+	/*animation: spinAndMove 0.5s both alternate;*/
+	transform: translate(100px) rotate(360deg);
+}
+
+.menuWrapper {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+	margin-right: 20px;
+}
+.menuItem {
+	color: #a1a1aa;
+	font-weight: 700;
+}
+.menuItem:hover {
+	color: #fff;
+}
+
+@keyframes spinAndMove {
+	0% {
+	}
+	100% {
+		transform: translateX(100px);
+	}
+}
