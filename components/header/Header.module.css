@@ -44,7 +44,6 @@
 }
 
 .logoWrapper:hover .logo {
-	/*animation: spinAndMove 0.5s both alternate;*/
 	transform: translate(100px) rotate(360deg);
 }
 

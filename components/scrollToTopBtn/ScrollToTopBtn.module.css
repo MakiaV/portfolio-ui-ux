@@ -1,0 +1,26 @@
+.container {
+	position: fixed;
+	bottom: 0;
+	right: 70px;
+	cursor: pointer;
+	z-index: 99;
+	transition: all 1s ease-in-out;
+}
+
+.scrollToTopBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background: #17171a;
+	box-shadow: -6px 6px 8px #09090a, 6px -6px 8px #25252a;
+}
+.scrollToTopBtnImg {
+	transition: all 0.5s ease-in-out;
+}
+.scrollToTopBtn:hover {
+	background: rgba(23, 23, 26, 0.6);
+}
+.scrollToTopBtn:hover .scrollToTopBtnImg {
+	transform: translateY(-35px);
+}

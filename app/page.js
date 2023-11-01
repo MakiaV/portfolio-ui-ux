@@ -38,7 +38,7 @@ export default function Home() {
 
 			<div className={styles.contactWrapper} id="contact">
 				<p>Contact</p>
-				<span>GET IN TOUCH</span>
+				<span>Let's stay in touch</span>
 				<div className={styles.contactContainer}>
 					{contacts.map((contact) => (
 						<div key={contact.id} className={styles.contactItem}>

@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import ScrollToTopBtn from "@/components/scrollToTopBtn/ScrollToTopBtn";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
 					{children}
 					<Footer />
 				</div>
+				<ScrollToTopBtn />
 			</body>
 		</html>
 	);

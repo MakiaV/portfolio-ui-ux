@@ -16,7 +16,7 @@ export default [
 	},
 	{
 		id: 5,
-		title: "+1(281)123",
+		title: "+1(281)12345",
 		image: "/icons/telephone.png",
 	},
 	{
@@ -28,10 +28,5 @@ export default [
 		id: 7,
 		title: "Discord",
 		image: "/icons/discord.png",
-	},
-	{
-		id: 8,
-		title: "Youtube",
-		image: "/icons/youtube.png",
 	},
 ];
