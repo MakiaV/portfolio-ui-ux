@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import profilImage from "../public/images/profil.jpeg";
 import contacts from "@/assets/contacts";
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

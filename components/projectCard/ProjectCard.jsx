@@ -2,16 +2,12 @@
 
 import Image from "next/image";
 import styles from "./ProjectCard.module.css";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useState } from "react";
 
 const ProjectCard = ({ project }) => {
 	const [showTitle, setShowTitle] = useState(false);
-	const [loaded, setLoaded] = useState(false);
-
-	useEffect(() => {}, []);
 
 	const handleAnimation = () => {
-		setLoaded(true);
 		setShowTitle(!showTitle);
 	};
 
