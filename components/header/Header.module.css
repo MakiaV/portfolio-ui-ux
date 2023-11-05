@@ -1,6 +1,5 @@
 .headerWrapper {
 	margin-top: 30px;
-	margin-bottom: 150px;
 }
 .container {
 	display: flex;
@@ -11,7 +10,6 @@
 	border-radius: 100px;
 	background: #17171a;
 	box-shadow: -6px 6px 8px #09090a, 6px -6px 8px #25252a;
-	/*height: 60px;*/
 }
 
 .logoWrapper {

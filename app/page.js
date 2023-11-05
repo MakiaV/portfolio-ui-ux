@@ -1,9 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import profilImage from "../public/images/profil.jpeg";
 import contacts from "@/assets/contacts";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
+	useLayoutEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
+		gsap.to(".contactItem", {
+			scrollTrigger: {
+				trigger: ".contactItem",
+				start: "top 90%",
+				scrub: true,
+			},
+			opacity: 2,
+			duration: 0.1,
+		});
+	}, []);
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.profilWrapper}>
@@ -41,7 +59,7 @@ export default function Home() {
 				<span>Let's stay in touch</span>
 				<div className={styles.contactContainer}>
 					{contacts.map((contact) => (
-						<div key={contact.id} className={styles.contactItem}>
+						<div key={contact.id} className="contactItem">
 							<Image
 								src={contact.image}
 								alt="contact"
@@ -49,7 +67,7 @@ export default function Home() {
 								height={15}
 							/>
 
-							<span className={styles.contactTitel}>
+							<span className="contactTitel">
 								{contact.title}
 							</span>
 						</div>
