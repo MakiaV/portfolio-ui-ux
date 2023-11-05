@@ -8,3 +8,19 @@ a {
 	color: white;
 	text-decoration: none;
 }
+
+.contactItem {
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: #17171a;
+	box-shadow: -6px 6px 8px #09090a, 6px -6px 8px #25252a;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.contactItem:hover .contactTitel {
+	color: #fff;
+}

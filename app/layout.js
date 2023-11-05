@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import ScrollToTopBtn from "@/components/scrollToTopBtn/ScrollToTopBtn";
+import LocomotiveScroll from "@/components/locomotiveScroll";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -16,12 +17,14 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={raleway.className}>
-				<div>
-					<Header />
-					{children}
-					<Footer />
-				</div>
-				<ScrollToTopBtn />
+				<LocomotiveScroll>
+					<div>
+						<Header />
+						{children}
+						<Footer />
+					</div>
+					<ScrollToTopBtn />
+				</LocomotiveScroll>
 			</body>
 		</html>
 	);
